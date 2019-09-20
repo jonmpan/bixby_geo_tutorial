@@ -6,9 +6,11 @@
 
 ## Overview
 
-This tutorial capsule is designed to demonstrate how to get started with the geo library capsule. The tutorial can be found [here]():
+This tutorial capsule is designed to demonstrate how to get started with the geo library capsule. The tutorial can be found [here](https://youtu.be/OlRusgC3Lw8):
 
-The `master` branch of this repository matches the code at the end of the video. In this tutorial, you'll be building 3 of the following input views. All 6 of these views are included in the code though.
+https://youtu.be/OlRusgC3Lw8
+
+The `master` branch of this repository matches the code at the end of the video. In this tutorial, you will integrate the geo library and learn how to use geo.SearchTerm, geo.NamedPoint, and geo.SearchRegion.
 
 ![Screenshot-market](/assets/readme/market.png)
 ![Screenshot-statue](/assets/readme/statue.png)
