@@ -1,0 +1,18 @@
+capsule {
+  id (playground.geo_tutorial)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+  }
+  capsule-imports{
+    import (viv.geo){
+      as (geo) version (9.20.3)
+    }
+  }
+  runtime-flags {
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+  }
+}

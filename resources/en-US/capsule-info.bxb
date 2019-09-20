@@ -1,0 +1,8 @@
+capsule-info {
+  display-name (Geo Tutorial)
+  developer-name (__COMPANY_NAME__)
+  icon-asset (images/icon.png)
+  description ("A quickstart example on how to use Geo")
+  // website-url (https://example.com/)
+  // terms-url (https://example.com/terms-of-use/)
+}

@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetLocation) {
+      accepted-inputs (searchRegion)
+      local-endpoint (GetLocation.js)
+    }
+  }
+}

@@ -1,0 +1,5 @@
+train (t-xg5v96g9411ldorn133ipi95w) {
+  utterance ("[g:GetLocation] (60 S Market Street)[v:geo.SearchTerm]")
+  plan (Y2BlkCvISaxML8ovzUvRS0/Njy8pLckvykzM0QtKLS7NKWFQxiXvnlrik5+cWJKZn8cgUpZZBpLVC05NLErOCEpNB4mqw0SdSjNzUpCl3IrycyH8kNSiXAYhVO1gMRYGRgYmBmYgzQBlMYJZIMAEpIHiAA==)
+  last-modified (1568940715494)
+}

@@ -1,0 +1,7 @@
+structure (Result) {
+  description (__DESCRIPTION__)
+  property (location) {
+    type (geo.NamedPoint)
+    min (Required) max (One)
+  }
+}

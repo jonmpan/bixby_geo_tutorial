@@ -1,0 +1,17 @@
+action (GetLocation) {
+  type (Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (searchRegion) {
+      type (geo.SearchRegion)
+      min (Optional) max (One)
+      default-select{
+        with-learning
+        with-rule{
+          select-first
+        }
+      }
+    }
+  }
+  output (Result)
+}

@@ -1,0 +1,89 @@
+result-view{
+	match: Result(result)
+	
+	message{
+		template ("#{title(result.location.name)}")
+	}
+	
+	render{
+		layout{
+			section{
+				content{
+					map-card {
+						aspect-ratio(16:9)
+						title-area {
+							slot1 {
+								text {
+									value ("[#{value(result.location.address.streetAddress)}]")
+									style (Title_S)
+								}
+							}
+							slot2 {
+								paragraph{
+									value ("[#{value(result.location.unstructuredAddress)}]")
+									style (Title_XS)
+								}
+							}
+						}
+						markers {
+							marker {
+								geo (result.location.point)
+								width (15)
+								height (20)
+								anchor-x (5)
+								anchor-y (15)
+								rotation (0)
+							}
+						}
+					}
+					spacer
+					paragraph{
+						value("[Type: #{title(result.location.placeCategory)}]")
+						style(Title_S)
+					}
+					spacer
+					hbox{
+						content{
+							vbox{
+								grow(1)
+								halign (Start)
+								content{
+									single-line{
+										text{
+											value(Lat)
+											style(Detail_L_Soft)
+										}
+									}
+									single-line{
+										text{
+											value("#{value(result.location.point.latitude)}")
+											style(Detail_L)
+										}
+									}
+								}
+							}
+							vbox{
+								grow(1)
+								halign (Start)
+								content{
+									single-line{
+										text{
+											value(Lng)
+											style(Detail_L_Soft)
+										}
+									}
+									single-line{
+										text{
+											value("#{value(result.location.point.longitude)}")
+											style(Detail_L)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
